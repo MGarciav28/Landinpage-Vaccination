@@ -1,0 +1,111 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    color: #1f3e72;
+}
+
+nav {
+    height: 183px;
+    display: flex;
+    align-items: center;    
+    padding-left: 20px;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.navegacion{
+    display: flex;
+    width: 1030px;
+    justify-content: space-around;
+    
+}
+
+.navegacion .enlace{
+    padding: 25px 20px;
+}
+
+.navegacion .btn-active{
+    background: #2949c7;
+    border-radius: 5%;
+    box-shadow:0px 7px 7px #ccd5f6 ;
+    -webkit-border-radius:5%;
+    -moz-border-radius:5%;
+    -ms-border-radius:5%;
+    -o-border-radius:5%;
+}
+
+.navegacion .enlace a{
+    color: #6d7b93;
+    text-decoration: none;    
+}
+
+.navegacion .btn-active a{
+    color: #fff;
+}
+
+
+.articulo-1{
+    display: flex;
+}
+
+.parrafo-1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 30px;
+}
+
+p{
+    color: #6d7b93;
+}
+.parrafo-1 h1{
+
+    color: #1f3e72;
+}
+.label-group{
+width: 60%;
+display: flex;
+justify-content:space-around;
+}
+
+.etiquetas span{
+    font-size: 14px;
+}
+
+.icons1{
+    width: 20px;
+    margin: 0px 10px;
+}
+
+.image1{
+    width: 40%;
+}
+
+.icons2{
+    width: 25px;
+    margin: 0px 10px;
+}
+
+.head-calendario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    flex-grow: 5;
+}
+
+.head-calendario .etiquetas{
+    justify-self: center;
+}
+.calendario{
+    background-color: #6d7b93;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendario .tarjeta{
+
+}
