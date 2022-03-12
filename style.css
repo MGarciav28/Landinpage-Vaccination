@@ -82,6 +82,13 @@ justify-content:space-around;
 .icons1{
     width: 20px;
     margin: 0px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fffbea;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .image1{       
@@ -97,6 +104,13 @@ justify-content:space-around;
 .icons2{
     width: 20px;
     margin: 0px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f1f5ff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .head-calendario{
@@ -145,42 +159,53 @@ font-size: 20px;
     height: 100px;
 }
 
-.ventajas .text{
+.contenedor .text{
     padding:40px 0px 0px 40px;
     width: 35%;
 }
 
-.ventajas h2{
+.contenedor h2{
     font-size: 2em;
     margin-bottom: 1em;
 }
 
-.ventajas p{
+.contenedor p{
     line-height: 1.8em;
 }
 
-.ventajas .card-container{
+.contenedor .card-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 40px 20px;
     padding: 0px 40px;
 }
 
-.ventajas .card{
+.contenedor .card{
     border: solid 1px rgba(126, 156, 207, 0.1);
-    padding: 20px;
+    padding: 25px;
     border-radius: 5px;
-    width: 15%;
+    width: 20%;
     margin: 20px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .1);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
 }
 
-.ventajas .card h3{
+.contenedor .card h3{
     line-height: 1.5em;
     margin: 10px 0px;
 }
 
+.contenedor .card-container .card .bg-icon{
+    padding: 10px;
+    margin: 0%;
+    width: 35px;
+    border-radius: 5px;
+    background: #f1f5ff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
