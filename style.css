@@ -3,6 +3,9 @@
     margin: 0%;
     color: #1f3e72;
 }
+.btn>a[href^="#"], .btn>span{
+    color: #fff !important;
+}
 
 nav {
     height: 183px;
@@ -27,8 +30,9 @@ nav {
     padding: 25px 20px;
 }
 
-.navegacion .btn-active{
+.btn{
     background: #2949c7;
+    padding: 18px 25px;
     border-radius: 5%;
     box-shadow:0px 7px 7px #ccd5f6 ;
     -webkit-border-radius:5%;
@@ -37,18 +41,18 @@ nav {
     -o-border-radius:5%;
 }
 
+
+
 .navegacion .enlace a{
     color: #6d7b93;
     text-decoration: none;    
 }
 
-.navegacion .btn-active a{
-    color: #fff;
-}
 
 
 .articulo-1{
     display: flex;
+    padding-right: 0%;
 }
 
 .parrafo-1{
@@ -63,7 +67,6 @@ p{
     color: #6d7b93;
 }
 .parrafo-1 h1{
-
     color: #1f3e72;
 }
 .label-group{
@@ -81,12 +84,18 @@ justify-content:space-around;
     margin: 0px 10px;
 }
 
-.image1{
-    width: 40%;
+.image1{       
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.image1 img{   
+    max-width: 800px;
+    width: 100%;
 }
 
 .icons2{
-    width: 25px;
+    width: 20px;
     margin: 0px 10px;
 }
 
@@ -98,14 +107,40 @@ justify-content:space-around;
 }
 
 .head-calendario .etiquetas{
-    justify-self: center;
+    justify-self: center;    
 }
+
+.head-calendario .etiquetas span{
+    font-size: 28px;
+}
+
 .calendario{
-    background-color: #6d7b93;
-    display: flex;
+    /* background-color: #6d7b93; */
+    position: relative;
+    background: #fff;
+    margin-top: -250px;
+    margin-bottom: 200px;
+    margin-left: 20px;
+    /* z-index: 50; */
+    width: 800px;
+    display: flex; 
     justify-content: space-between;
+    padding: 25px 15px;
+    box-shadow: 5px 15px 30px rgba(121, 150, 200, .7);
 }
 
-.calendario .tarjeta{
+.calendario .tarjeta>span{
+margin-left: 35px;
+font-size: 20px;
+}
 
+.marcas{
+    margin: 50px 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.marcas>img{
+    height: 100px;
 }
