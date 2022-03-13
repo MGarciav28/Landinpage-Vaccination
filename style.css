@@ -204,8 +204,60 @@ font-size: 20px;
     width: 35px;
     border-radius: 5px;
     background: #f1f5ff;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.preparaciones .contenedor .extendido{width: 80%;}
+
+.desplegable .options .bg-icon{ 
+    padding: 5px;
+    margin: 0%;
+    width: 20px;
+    border-radius: 5px;
+    background: #f1f5ff;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+.contenedor .desplegable .options .label{    
+    display: inline-block;
+    position: relative;
+    margin: 0px 20px;
+    bottom: 8px;
+    height: 20px;
+    
+}
+
+.contenedor .desplegable .options .btn-desplegable{
+    position: absolute;
+    padding: 3px;
+    width: 10px;
+    margin: 0%;
+    border-radius: 2px;
+    background: #f1f5ff;
+    top: 15px;
+    right: 15px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.contenedor .desplegable .options{
+    padding: 10px 15px; 
+    width: 70%;    
+    border: solid 1px #fff;
+    border-radius: 5px;    
+    background: green;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
