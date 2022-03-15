@@ -66,7 +66,7 @@ nav {
 p{
     color: #6d7b93;
 }
-.parrafo-1 h1{
+.parrafo-1 h1, .parrafo h2{
     color: #1f3e72;
 }
 .label-group{
@@ -219,7 +219,7 @@ font-size: 20px;
     padding: 0%;
 }
 
-.preparaciones .contenedor .extendido p{
+.contenedor .extendido p{
     margin-bottom: 30px;
 }
 
@@ -278,3 +278,48 @@ font-size: 20px;
     -o-border-radius: 5px;
 }
 
+.contacto{
+    margin: 50px 0px;
+}
+
+.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-container .contact-cards{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border-radius: 5%;
+    border: solid 3px rgba(0,0,0,.1);
+    /*padding: 20px;
+    */margin: 15px 0px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
+.contact-cards .contact-text{
+    display: inline-block;
+    width: 50%;
+    margin: 30px 0px;
+}
+
+
+
+.btn-contacto{
+    display: inline-block;
+    width: 60%;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px 0px;
+    
+}
