@@ -210,7 +210,18 @@ font-size: 20px;
     -o-border-radius:;
 }
 
-.preparaciones .contenedor .extendido{width: 80%;}
+.preparaciones .image1{
+    width: 45%;
+}
+
+.preparaciones .contenedor .extendido{
+    width: 80%;
+    padding: 0%;
+}
+
+.preparaciones .contenedor .extendido p{
+    margin-bottom: 30px;
+}
 
 .desplegable .options .bg-icon{ 
     padding: 5px;
@@ -229,8 +240,13 @@ font-size: 20px;
     position: relative;
     margin: 0px 20px;
     bottom: 8px;
-    height: 20px;
-    
+    height: 20px;    
+}
+
+.contenedor .desplegable .options p{
+    font-size: 12px;
+    line-height: 1.2rem;
+    padding-left: 10%;
 }
 
 .contenedor .desplegable .options .btn-desplegable{
@@ -251,10 +267,11 @@ font-size: 20px;
 .contenedor .desplegable .options{
     padding: 10px 15px; 
     width: 70%;    
-    border: solid 1px #fff;
+    border: solid 1px rgba(204, 213, 246, 0.2);
     border-radius: 5px;    
-    background: green;
+    background: #fff;
     position: relative;
+    margin: 25px 0px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
