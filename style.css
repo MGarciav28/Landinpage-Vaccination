@@ -8,6 +8,10 @@
    /*  color: #1f3e72; */
 }
 
+h1, h2, h3{
+    color: #1f3e72;
+}
+
 nav {
     height: 120px;
     display: flex;
@@ -48,7 +52,7 @@ nav::before{
     color: #6d7b93;
 }
 
-.btn-submit, .btn:hover{
+.btn:hover{
     background: #2949c7;
     border-radius: 5%;
     padding: 25px 20px;
@@ -60,13 +64,43 @@ nav::before{
     -o-border-radius:5%;
 }
 
+.btn-submit{
+    background: #2949c7;
+    border-radius: 5%;
+    padding: 25px 20px;
+    /* color: #ffffff; */
+}
+
 .nav .navegacion .enlace a:hover{
     color: #fff;
 }
 
+.art-principal{
+    position: relative;
+}
+
 .art-principal::before{
     content: url(img/triangulos-bg.png);
-    width: 15px;    
+    position: absolute;
+    /*top: 0;
+    right: 0;
+    */z-index: 0;
+    transform:scale(0.3,0.3)rotate(-90deg) translate(600px,0px);
+    -webkit-transform:scale(0.3,0.3)rotate(-90deg) translate(600px,0px);
+    -moz-transform:scale(0.3,0.3)rotate(-90deg) translate(600px,0px);
+    -ms-transform:scale(0.3,0.3)rotate(-90deg) translate(600px,0px);
+    -o-transform:scale(0.3,0.3)rotate(-90deg) translate(600px,0px);
+}
+
+.art-principal .image1::before{
+    position: absolute;
+    content: url(img/triangulos-bg.png);
+    z-index: 0;
+    transform: scale(0.5,0.5) translate(-320px,230px);
+    -webkit-transform: scale(0.5,0.5) translate(-320px,230px);
+    -moz-transform: scale(0.5,0.5) translate(-320px,230px);
+    -ms-transform: scale(0.5,0.5) translate(-320px,230px);
+    -o-transform: scale(0.5,0.5) translate(-320px,230px);
 }
 
 .calendario .btn-submit .blanco{
@@ -99,8 +133,7 @@ p{
 .parrafo-1 h1{
     width: 70%;
     margin: 2rem 2rem 2rem 0;
-    font-size:46px;
-    color: #1f3e72;
+    font-size:46px;    
 }
 
 .label-group{
@@ -182,6 +215,11 @@ justify-content:space-around;
     box-shadow: 5px 15px 30px rgba(121, 150, 200, .7);
 }
 
+.calendario .btn-submit:hover{
+    background-color: #0e2347;
+    box-shadow:0px 7px 7px rgba(0, 0, 0, .1);    
+}
+
 .calendario .tarjeta>span{
 margin-left: 50px;
 font-size: 20px;
@@ -197,6 +235,10 @@ font-weight: 700;
 
 .marcas>img{
     height: 100px;
+}
+
+.contenedor{
+    position: relative;
 }
 
 .contenedor .text{
@@ -218,6 +260,10 @@ font-weight: 700;
     justify-content: space-between;
     margin: 40px 20px;
     padding: 0px 40px;
+}
+.contenedor .card-container .card:hover, .desplegable .options:hover{
+    background: #f4f6fb;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
 }
 
 .contenedor .card{
@@ -244,10 +290,42 @@ font-weight: 700;
     width: 35px;
     border-radius: 5px;
     background: #f1f5ff;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+
+.img-bg-triangle{
+    position: relative;
+}
+
+.img-bg-triangle::before{
+    position: absolute;
+    content: url(img/triangulos-bg.png);
+    z-index: 0;
+    right: 0;
+    transform: scale(0.4,0.4) translate(165px,-375px);
+    -webkit-transform: scale(0.4,0.4) translate(165px,-375px);
+    -moz-transform: scale(0.4,0.4) translate(165px,-375px);
+    -ms-transform: scale(0.4,0.4) translate(165px,-375px);
+    -o-transform: scale(0.4,0.4) translate(165px,-375px);
+}
+
+.img-bg-triangle-2, .img-bg-triangle-3{
+    height: 100px;
+    position: relative;
+}
+
+.img-bg-triangle-2::before{
+    position: absolute;
+    content: url(img/triangulos-bg.png);
+    z-index: 0;
+    transform: scale(0.6,0.6) rotate(180deg) translate(70px,120px);
+    -webkit-transform: scale(0.6,0.6) rotate(180deg) translate(70px,120px);
+    -moz-transform: scale(0.6,0.6) rotate(180deg) translate(70px,120px);
+    -ms-transform: scale(0.6,0.6) rotate(180deg) translate(70px,120px);
+    -o-transform: scale(0.6,0.6) rotate(180deg) translate(70px,120px);
 }
 
 .preparaciones .image1{
@@ -309,7 +387,7 @@ font-weight: 700;
     width: 70%;    
     border: solid 1px rgba(204, 213, 246, 0.2);
     border-radius: 5px;    
-    background: #fff;
+    /* background: #fff; */
     position: relative;
     margin: 25px 0px;
     -webkit-border-radius: 5px;
@@ -328,6 +406,15 @@ font-weight: 700;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+}
+
+.contacto .parrafo-1 .parrafo-head{
+    margin: 0px 30px;
+    width: 80%;
+}
+
+.contacto .contenedor .espacio{
+    height: 70px;
 }
 
 .contact-container .contact-cards{
@@ -357,6 +444,18 @@ font-weight: 700;
     color: #6d7b93;
 }
 
+
+.img-bg-triangle-3::before{
+    position: absolute;
+    content: url(img/triangulos-bg.png);
+    z-index: 0;
+    right: 0px;
+    transform: scale(0.6, 0.6) translate(72px,-10px) ;
+    -webkit-transform: scale(0.6, 0.6) translate(72px,-10px) ;
+    -moz-transform: scale(0.6, 0.6) translate(72px,-10px) ;
+    -ms-transform: scale(0.6, 0.6) translate(72px,-10px) ;
+    -o-transform: scale(0.6, 0.6) translate(72px,-10px) ;
+}
 
 .btn-contacto{
     display: inline-block;
@@ -414,12 +513,18 @@ footer .secciones .fundation span{
     line-height: 2em;
 }
 
-footer .terminos{
-    display: flex;
-    justify-content: space-between;    
+footer .terminos .cont{
+    width: 270px;
 }
 
-footer .terminos span{
+footer .terminos, footer .terminos .cont{
+    display: flex;
+    justify-content: space-between;    
+    position: relative;
+}
+
+footer .terminos .cont span{
+    z-index: 20;
     color: #6d7b93;
     font-size: 14px;
 }
@@ -429,5 +534,18 @@ footer .secciones .fundation .logo-footer{
 }
 
 footer .terminos .span-espace{
-    width: 400px;
+    width: 200px;
+}
+
+footer .terminos .span-espace::after{
+    position: absolute;
+    content: url(img/triangulos-bg-footer.png);
+    z-index: 0;
+    right: 0px;
+    bottom: 0px;
+    transform: scale(0.6,0.6) translate(0px,140px);
+    -webkit-transform: scale(0.6,0.6) translate(0px,140px);
+    -moz-transform: scale(0.6,0.6) translate(0px,140px);
+    -ms-transform: scale(0.6,0.6) translate(0px,140px);
+    -o-transform: scale(0.6,0.6) translate(0px,140px);
 }
